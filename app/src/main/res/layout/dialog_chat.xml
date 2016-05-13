@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_nav"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_8dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="@dimen/margin_8dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_chat_close" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pb_loading"
+            android:layout_below="@+id/lay_search"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="@dimen/margin_8dp" />
+
+        <LinearLayout
+            android:id="@+id/lay_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnCapture"
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/img_chat_capture" />
+
+            <EditText
+                android:id="@+id/txtChat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_edittext"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_white"
+                android:hint="@string/enter_messages"
+                android:imeOptions="flagNoEnterAction"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/text_gray_dark"
+                android:textColorHint="@color/text_gray_hint"
+                android:textSize="@dimen/text_medium" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_edittext"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:gravity="center"
+        android:text="@string/no_chat"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_medium"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/bg_progress"
+        android:indeterminateDuration="1000"
+        android:visibility="gone" />
+
+</RelativeLayout>

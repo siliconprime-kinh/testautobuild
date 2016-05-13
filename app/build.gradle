@@ -1,0 +1,174 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+plugins {
+    id "me.tatarka.retrolambda" version "3.2.5"
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.neenbedankt.android-apt'
+
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+repositories {
+    maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
+}
+
+repositories {
+    maven { url 'http://clojars.org/repo' }
+}
+
+repositories {
+    mavenCentral()
+}
+
+//retrolambda {
+//    jvmArgs '-noverify'
+//    jdk System.getenv("JAVA_HOME")
+//    javaVersion JavaVersion.VERSION_1_7
+//    defaultMethods false
+//    incremental true
+//}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    project.archivesBaseName = "dropin";
+    defaultConfig {
+        applicationId 'com.dropininc'
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.14D"
+//        versionName "1.0.1P"
+        multiDexEnabled true
+        manifestPlaceholders = [manifestApplicationId: "${applicationId}",
+                                onesignal_app_id: "d465b696-74bc-47aa-9a88-b1131f3f856a",
+                                onesignal_google_project_number: "153142172478"]
+    }
+    signingConfigs {
+        debug {
+            storeFile file("../distribution/debug.keystore")
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(output.outputFile.parent, output.outputFile.name.replace(".apk", "-" + defaultConfig.versionName + ".apk"))
+                }
+            }
+        }
+    }
+    productFlavors {
+        dev {
+            applicationId 'com.dropininc'
+        }
+        qa {
+            applicationId 'com.dropininc'
+        }
+        staging {
+            applicationId 'com.dropininc'
+        }
+        production {
+            applicationId 'com.dropininc'
+        }
+    }
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    productFlavors {
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'jniLibs'
+        }
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+}
+
+tasks.findByPath(":pk-library:androidJavadocs").enabled = false
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':LibrarySlidingMenu')
+    compile ('com.android.support:appcompat-v7:23.1.1') {
+        transitive = true
+    }
+    compile ('com.android.support:recyclerview-v7:23.1.1') {
+        transitive = true
+    }
+    compile ('com.android.support:cardview-v7:23.1.1') {
+        transitive = true
+    }
+    compile project(':viewflow')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+    compile('com.twitter.sdk.android:twitter:1.10.0@aar') {
+        transitive = true;
+    }
+    compile project(':pk-library')
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.pubnub:pubnub-android:3.7.5'
+    compile 'com.mixpanel.android:mixpanel-android:4.6.4'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.zendesk:sdk:1.5.0.3'
+    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'io.branch.sdk.android:library:1.10.8'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile 'com.stripe:stripe-android:1.0.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile project(':swipe-to-dismiss')
+    compile 'com.wdullaer:materialdatetimepicker:2.2.0'
+    compile 'com.google.dagger:dagger:2.0.2'
+    apt 'com.google.dagger:dagger-compiler:2.0.2'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'io.reactivex:rxjava:1.1.2'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile 'me.tatarka:gradle-retrolambda:3.2.3'
+    compile 'com.pusher:pusher-java-client:1.1.2'
+    compile 'com.onesignal:OneSignal:2.+@aar'
+}

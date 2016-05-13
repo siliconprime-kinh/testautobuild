@@ -1,0 +1,10 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/build/intermediates
+**/build
+/import-summary.txt
+__MAC*
+*.iml

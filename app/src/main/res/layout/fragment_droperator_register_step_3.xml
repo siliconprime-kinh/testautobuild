@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_account_information"
+            android:textAllCaps="true"
+            android:textColor="@color/text_gray_dark" />
+
+        <com.dropininc.customview.HighlightEditText
+            android:id="@+id/dropRegisterAccountNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/account_number"
+            android:imeOptions="actionNext"
+            android:textColor="@color/text_gray_dark"
+            android:textColorHint="@color/text_gray_hint"
+            android:textSize="18sp"
+            app:het_min_symbols="9"
+            app:het_required="true"
+            android:inputType="numberDecimal" />
+
+        <com.dropininc.customview.HighlightEditText
+            android:id="@+id/dropRegisterRoutingNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/routing_number"
+            android:imeOptions="actionDone"
+            android:textColor="@color/text_gray_dark"
+            android:textColorHint="@color/text_gray_hint"
+            android:textSize="18sp"
+            app:het_min_symbols="9"
+            app:het_max_symbols="9"
+            app:het_required="true"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dropRegisterDoneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enable_state_button_bg"
+        android:enabled="false"
+        android:text="@string/field_completion_hint"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

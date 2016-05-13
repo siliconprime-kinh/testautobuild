@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Not use-->
+    <color name="button_disable_orange">#EDE6E1</color>
+    <color name="main_background">#333333</color>
+    <color name="main_background_dark">#333333</color>
+    <color name="text_button_dialog">#34B3A0</color>
+    <color name="text_button_dialog_selected">#8034B3A0</color>
+
+    <!-- Color circle at home -->
+    <color name="inactive_circle_at_home">#49C3B1</color>
+    <color name="active_circle_at_home">#ffffffff</color>
+    <color name="blue_button">#49C3B1</color>
+    <color name="blue_button_selected">#06c690</color>
+    <color name="blue_button_disable">#CCCCCC</color>
+
+    <color name="navigation_bg_black">#333333</color>
+    <color name="bg_screen_grey">#f0f1f1</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red_button">#F64148</color>
+    <color name="red_button_selected">#80F64148</color>
+
+    <!-- Color Text App style -->
+    <color name="text_gray_custom">#999999</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_gray_dark">#333333</color>
+    <color name="text_gray_hint">#cccccc</color>
+    <color name="text_green">#49C3B1</color>
+    <color name="text_green_taped">#06c690</color>
+    <color name="text_red">#f65a5b</color>
+    <color name="text_subject">#8C8989</color>
+
+    <color name="divider_gray_new">#CCCCCC</color>
+    <color name="text_blue_navigation">#49C3B1</color>
+    <color name="text_blue_navigation_selected">#06c690</color>
+
+    <color name="text_title_dialog">#FFFFFF</color>
+    <color name="text_message_dialog">#FFFFFF</color>
+    <color name="bg_dialog">#333333</color>
+
+    <color name="row_unselected">#f0f1f1</color>
+    <color name="row_selected">#AAd3d3d3</color>
+    <color name="text_color">#707070</color>
+    <color name="history_btn_selected_color">#666666</color>
+    <color name="route_location">#84B970</color>
+    <color name="bg_chat">#f0f0f0</color>
+    <color name="transparent">#33000000</color>
+
+</resources>

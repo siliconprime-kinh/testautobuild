@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.dropininc.customview.RecyclerViewEmptySupport
+            android:id="@+id/paymentRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:gravity="center"
+            android:text="@string/no_payment_methods"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_medium"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/addCreditCardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_button_blue"
+        android:gravity="center"
+        android:text="@string/add_credit_card"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_loading_dialog"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="36dp"
+    android:paddingBottom="36dp"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp">
+
+    <!--
+    <com.android.army.views.ProgressView
+        android:id="@+id/progress_pv_circular"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        app:pv_autostart = "true"
+        app:pv_circular="true"
+        app:pv_progressStyle="@style/CircularProgressDrawableStyle"
+        app:pv_progressMode="indeterminate"/>
+        -->
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:indeterminateDuration="1000"
+        android:indeterminateDrawable="@drawable/bg_progress"
+        style="?android:attr/progressBarStyleLarge" />
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="@string/processing"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+
+</LinearLayout>

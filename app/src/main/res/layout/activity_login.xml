@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen_grey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_nav"
+        android:background="@color/navigation_bg_black">
+
+        <TextView
+            android:id="@+id/loginTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_screen_grey"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_40dp"
+                android:paddingLeft="@dimen/margin_40dp"
+                android:paddingRight="@dimen/margin_40dp"
+                android:paddingTop="@dimen/margin_32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:singleLine="true"
+                        android:text="@string/plus"
+                        android:textColor="@color/text_gray_dark"
+                        android:textSize="@dimen/text_medium" />
+
+                    <com.dropininc.customview.HighlightEditText
+                        android:id="@+id/loginCountryCodeEditText"
+                        android:layout_width="65dp"
+                        android:layout_height="@dimen/height_edittext"
+                        android:layout_marginEnd="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/margin_8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_dark"
+                        android:textColorHint="@color/text_gray_hint"
+                        android:textSize="@dimen/text_medium"
+                        app:het_min_symbols="1"
+                        app:het_required="true" />
+
+                    <com.dropininc.customview.HighlightEditText
+                        android:id="@+id/loginPhoneNumberEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_edittext"
+                        android:background="@drawable/bg_edittext_white"
+                        android:hint="@string/mobile_number"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_dark"
+                        android:textColorHint="@color/text_gray_hint"
+                        android:textSize="@dimen/text_medium"
+                        app:het_min_symbols="1"
+                        app:het_required="true" />
+
+                </LinearLayout>
+
+                <com.dropininc.customview.EmailHighlightEditText
+                    android:id="@+id/loginEmailAddressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_edittext"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray_dark"
+                    android:textColorHint="@color/text_gray_hint"
+                    android:textSize="@dimen/text_medium"
+                    app:het_required="true" />
+
+                <TextView
+                    android:id="@+id/loginSmsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:gravity="center"
+                    android:text="@string/you_will_receive"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_mini_small" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/enable_state_button_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_medium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

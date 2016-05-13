@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="24dp">
+
+    <RelativeLayout
+        android:id="@+id/lay_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:text="10mi"
+            android:id="@+id/tv_value"
+            android:background="@drawable/bg_circle_radius"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <com.dropininc.customview.CustomSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:progress="10"
+            android:max="50"
+            android:progressDrawable="@drawable/bg_seekbar"
+            android:thumb="@drawable/bg_seekbar_circle"
+            android:thumbOffset="16dp"
+            android:progressTint="@color/text_blue_navigation"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_below="@+id/tv_value"
+            android:layout_marginTop="8dp"
+            android:splitTrack="false"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/selector_row_white"
+    android:drawableRight="@drawable/ic_arrow_left_green"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:singleLine="true"
+    android:text="DropIn"
+    android:textColor="@color/text_green"
+    android:textSize="@dimen/text_small"
+    android:textStyle="bold" />
+

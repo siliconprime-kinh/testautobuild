@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lay_edit_peofile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="@string/edit_profile"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sendLocation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/selector_row_setting"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Send Locations"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_language"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="@string/language"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_become_operator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="@string/become_an_operator"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_stream"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_row_setting"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Publicer"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_row_setting"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Viewer"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_gigs_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Gigs Cancel"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+ <!-- log -->
+    <RelativeLayout
+        android:id="@+id/lay_log_network"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:id="@+id/lay_log_network_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Log NetWork"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_log_pusher"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:id="@+id/lay_log_pusher_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Log Pusher"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_log_server"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/selector_row_setting">
+
+        <TextView
+            android:id="@+id/lay_log_server_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_left_green"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/height_toolbar"
+            android:padding="16dp"
+            android:text="Log Server"
+            android:textColor="@color/text_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- log -->
+
+
+</LinearLayout>

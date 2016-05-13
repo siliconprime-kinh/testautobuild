@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="height_nav">56dp</dimen>
+
+    <dimen name="margin_bottom_6dp">8dp</dimen>
+    <dimen name="margin_bottom_3dp">8dp</dimen>
+
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_64dp">64dp</dimen>
+    <dimen name="margin_200dp">200dp</dimen>
+
+    <dimen name="margin_icon_app_login">40dp</dimen>
+    <dimen name="margin_icon_offer_detail">0dp</dimen>
+
+    <!-- Menu -->
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
+
+    <!-- Button -->
+    <dimen name="min_height_button">50dp</dimen>
+    <dimen name="min_width_button">64dp</dimen>
+    <dimen name="min_height_lay_button">48dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_mini_tiny">12sp</dimen>
+    <dimen name="text_mini_small">14sp</dimen>
+    <dimen name="text_mini_medium">16sp</dimen>
+    <dimen name="text_mini_large">18sp</dimen>
+    <dimen name="text_mini_xlarge">20sp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+
+    <!-- my account -->
+    <dimen name="profile_page_default_padding">8dp</dimen>
+    <dimen name="profile_page_subcontent_padding">8dp</dimen>
+    <dimen name="profile_user_thumb_size">60dp</dimen>
+    <dimen name="profile_boder_width">0.5dp</dimen>
+
+    <!-- Height -->
+    <dimen name="height_edittext">48dp</dimen>
+    <dimen name="height_toolbar">56dp</dimen>
+    <dimen name="height_button">60dp</dimen>
+    <dimen name="height_thumb_camera">60dp</dimen>
+    <dimen name="height_button_social">50dp</dimen>
+    <dimen name="height_image_bg_profile">160dp</dimen>
+    <dimen name="height_icon_more">34dp</dimen>
+    <dimen name="height_avatar_profile">114dp</dimen>
+    <dimen name="height_bg_avatar_edit_profile">120dp</dimen>
+    <dimen name="height_icon_tab">30dp</dimen>
+    <dimen name="height_tab">50dp</dimen>
+    <dimen name="height_image_discount_offer">90dp</dimen>
+    <dimen name="height_icon_discount_offer">15dp</dimen>
+    <dimen name="height_progressbar">55dp</dimen>
+
+    <dimen name="swipe_left">100dp</dimen>
+    <dimen name="dialog_margin_window">10dp</dimen>
+
+    <!-- Corner -->
+    <dimen name="corner_button">4dp</dimen>
+    <dimen name="corner_editText">2dp</dimen>
+    <dimen name="corner_dialog">12dp</dimen>
+
+    <dimen name="line_donate_device">0.5dp</dimen>
+    <dimen name="line_donate">1dp</dimen>
+    <dimen name="line_donate_bold">1.5dp</dimen>
+    <dimen name="line_discount">1dp</dimen>
+
+    <!-- improve tablet -->
+    <dimen name="text_size_title_toolbar">20sp</dimen>
+    <dimen name="text_size_menu_toolbar">16sp</dimen>
+    <dimen name="height_tab_bottom">55dp</dimen>
+    <dimen name="text_icon">22sp</dimen>
+    <dimen name="text_tab">13sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_normal_15sp">15sp</dimen>
+    <dimen name="text_size_large_17sp">17sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_button">18sp</dimen>
+    <dimen name="text_size_small_12">12sp</dimen>
+    <dimen name="text_size_small_14">14sp</dimen>
+    <dimen name="text_size_normal_18">18sp</dimen>
+
+    <dimen name="radius_circle_home">10dp</dimen>
+
+    <dimen name="strean_button_size">54dp</dimen>
+    <dimen name="strean_button_image_size">26dp</dimen>
+    <dimen name="text_price">38sp</dimen>
+</resources>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:id="@+id/linear_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_history"
+            android:gravity="center"
+            android:text="@string/stream_purchase"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <Button
+            android:id="@+id/btnEarning"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_history"
+            android:gravity="center"
+            android:text="@string/earnings"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pb_loading_mode"
+        android:layout_below="@+id/linear_buttom"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:scrollbars="none" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/bg_progress"
+        android:indeterminateDuration="1000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:gravity="center"
+        android:text="@string/no_record_found"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_medium"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_mode"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/btnMore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:indeterminateDrawable="@drawable/bg_progress"
+        android:indeterminateDuration="1000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_button_blue"
+        android:gravity="center"
+        android:text="@string/more"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium" />
+
+
+</RelativeLayout>

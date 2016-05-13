@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <dimen name="margin_bottom_6dp">8dp</dimen>
+    <dimen name="margin_bottom_3dp">8dp</dimen>
+
+    <dimen name="margin_2dp">4dp</dimen>
+    <dimen name="margin_4dp">8dp</dimen>
+    <dimen name="margin_6dp">12dp</dimen>
+    <dimen name="margin_8dp">16dp</dimen>
+    <dimen name="margin_10dp">20dp</dimen>
+    <dimen name="margin_12dp">24dp</dimen>
+    <dimen name="margin_14dp">28dp</dimen>
+    <dimen name="margin_16dp">32dp</dimen>
+    <dimen name="margin_18dp">36dp</dimen>
+    <dimen name="margin_20dp">40dp</dimen>
+    <dimen name="margin_24dp">48dp</dimen>
+    <dimen name="margin_30dp">60dp</dimen>
+    <dimen name="margin_32dp">64dp</dimen>
+    <dimen name="margin_36dp">72dp</dimen>
+    <dimen name="margin_40dp">80dp</dimen>
+    <dimen name="margin_48dp">96dp</dimen>
+    <dimen name="margin_50dp">100dp</dimen>
+    <dimen name="margin_64dp">128dp</dimen>
+    <dimen name="margin_200dp">400dp</dimen>
+    <dimen name="margin_170dp">370dp</dimen>
+
+    <dimen name="margin_icon_app_login">130dp</dimen>
+    <dimen name="margin_icon_offer_detail">5dp</dimen>
+    
+    <!-- Button -->
+    <dimen name="min_height_button">72dp</dimen>
+    <dimen name="min_width_button">128dp</dimen>
+    <dimen name="min_height_lay_button">48dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_mini_tiny">12sp</dimen>
+    <dimen name="text_mini_small">14sp</dimen>
+    <dimen name="text_mini_medium">16sp</dimen>
+    <dimen name="text_mini_large">18sp</dimen>
+    <dimen name="text_mini_xlarge">20sp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+
+    <!-- my account -->
+    <dimen name="profile_page_default_padding">8dp</dimen>
+    <dimen name="profile_page_subcontent_padding">8dp</dimen>
+    <dimen name="profile_user_thumb_size">60dp</dimen>
+    <dimen name="profile_boder_width">0.5dp</dimen>
+    
+    <!-- Height -->
+    <dimen name="height_toolbar">94dp</dimen>
+    <dimen name="height_button">73dp</dimen>
+    <dimen name="height_thumb_camera">60dp</dimen>
+    <dimen name="height_button_social">85dp</dimen>
+    <dimen name="height_image_bg_profile">320dp</dimen>
+    <dimen name="height_icon_more">68dp</dimen>
+    <dimen name="height_avatar_profile">228dp</dimen>
+    <dimen name="height_bg_avatar_edit_profile">240dp</dimen>
+    <dimen name="height_icon_tab">60sp</dimen>
+    <dimen name="height_tab">85dp</dimen>
+    <dimen name="height_image_discount_offer">145dp</dimen>
+    <dimen name="height_icon_discount_offer">30dp</dimen>
+    <dimen name="height_progressbar">76dp</dimen>
+    
+    <dimen name="swipe_left">100dp</dimen>
+    <dimen name="dialog_margin_window">20dp</dimen>
+
+    <!-- Corner -->
+    <dimen name="corner_button">8dp</dimen>
+    <dimen name="corner_editText">4dp</dimen>
+    <dimen name="corner_dialog">4dp</dimen>
+
+    <dimen name="line_donate_device">0.5dp</dimen>
+    <dimen name="line_donate">1dp</dimen>
+    <dimen name="line_donate_bold">1.5dp</dimen>
+    <dimen name="line_discount">2dp</dimen>
+
+    <!-- improve tablet -->
+    <dimen name="text_size_title_toolbar">26sp</dimen>
+    <dimen name="text_size_menu_toolbar">22sp</dimen>
+    <dimen name="height_tab_bottom">110dp</dimen>
+    <dimen name="text_icon">28sp</dimen>
+    <dimen name="text_tab">24sp</dimen>
+    <dimen name="text_size_small">20sp</dimen>
+    <dimen name="text_size_normal">22sp</dimen>
+    <dimen name="text_size_normal_15sp">21sp</dimen>
+    <dimen name="text_size_large_17sp">23sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_xlarge">26sp</dimen>
+    <dimen name="text_button">32sp</dimen>
+    <dimen name="text_size_small_12">16sp</dimen>
+    <dimen name="text_size_small_14">18sp</dimen>
+    <dimen name="text_size_normal_18">22sp</dimen>
+
+
+    <dimen name="radius_circle_home">10dp</dimen>
+</resources>

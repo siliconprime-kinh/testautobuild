@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen_grey">
+
+
+    <RelativeLayout
+        android:id="@+id/subscriberview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:keepScreenOn="true"></RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layMicro"
+                android:layout_width="@dimen/strean_button_size"
+                android:layout_height="@dimen/strean_button_size"
+                android:background="@color/bg_dialog">
+
+                <ImageView
+                    android:id="@+id/imgMicro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/strean_button_image_size"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_micro_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layMute"
+                android:layout_width="@dimen/strean_button_size"
+                android:layout_height="@dimen/strean_button_size"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/bg_dialog">
+
+                <ImageView
+                    android:id="@+id/imgMute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_mute_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layVideo"
+                android:layout_width="@dimen/strean_button_size"
+                android:layout_height="@dimen/strean_button_size"
+                android:background="@color/bg_dialog">
+
+                <ImageView
+                    android:id="@+id/imgVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_video_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layCamera"
+                android:layout_width="@dimen/strean_button_size"
+                android:layout_height="@dimen/strean_button_size"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/bg_dialog">
+
+                <ImageView
+                    android:id="@+id/imgCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_camera_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layInfo"
+                android:layout_width="@dimen/strean_button_size"
+                android:layout_height="@dimen/strean_button_size"
+                android:background="@color/bg_dialog">
+
+                <ImageView
+                    android:id="@+id/imgInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layCloseStream"
+                android:layout_width="@dimen/strean_button_size"
+                android:layout_height="@dimen/strean_button_size"
+                android:layout_marginLeft="6dp"
+                android:background="@color/bg_dialog">
+
+                <ImageView
+                    android:id="@+id/imgCloseStream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/strean_button_image_size"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_close_stream" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

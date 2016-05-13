@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardCornerRadius="4dp"
+    cardview:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/cardTypeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            tools:src="@drawable/pk_default_card" />
+
+        <TextView
+            android:id="@+id/cardLastNumbers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:textColor="#A7A7A7"
+            android:textSize="16sp"
+            tools:text="New Text" />
+
+        <ImageView
+            android:id="@+id/isCardDefaultImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_action_done"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

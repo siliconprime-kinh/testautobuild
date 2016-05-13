@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners
+        android:bottomLeftRadius="@dimen/corner_dialog"
+        android:bottomRightRadius="@dimen/corner_dialog"
+        android:topLeftRadius="@dimen/corner_dialog"
+        android:topRightRadius="@dimen/corner_dialog" />
+
+    <gradient
+        android:angle="-90"
+        android:centerColor="@color/bg_dialog"
+        android:endColor="@color/bg_dialog"
+        android:startColor="@color/bg_dialog" />
+
+</shape>

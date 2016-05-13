@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#883F3E3A"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_bg"
+            android:background="@drawable/ic_select_operator"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/lay_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.dropininc.customview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_avatar_big"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_near_your_drop_in_location"
+                android:id="@+id/tv_description"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/close"
+            android:textColor="@color/text_blue_navigation"
+            android:id="@+id/bt_close"
+            android:background="@android:color/transparent"
+            android:minWidth="80dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="24dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/request_stream"
+        android:id="@+id/bt_request"
+        android:background="@drawable/selector_button_blue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

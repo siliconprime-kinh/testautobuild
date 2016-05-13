@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_dialog">
+
+    <LinearLayout
+        android:id="@+id/lay_top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_picture"
+            android:id="@+id/tv_title"
+            android:textColor="@color/text_title_dialog"
+            android:textSize="@dimen/text_size_xlarge"
+            android:paddingLeft="24dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/from_gallery"
+            android:id="@+id/tv_from_gallery"
+            android:textColor="@color/text_message_dialog"
+            android:textSize="@dimen/text_size_normal"
+            android:paddingLeft="24dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/take_picture"
+            android:id="@+id/tv_take_picture"
+            android:textColor="@color/text_message_dialog"
+            android:textSize="@dimen/text_size_normal"
+            android:paddingLeft="24dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/bt_cancel"
+            android:textAllCaps="false"
+            style="@style/default_button_dialog"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

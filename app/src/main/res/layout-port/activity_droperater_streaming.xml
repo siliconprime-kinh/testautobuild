@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen_grey">
+
+
+    <RelativeLayout
+        android:id="@+id/publisherview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:keepScreenOn="true"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layTurnCamera"
+            android:layout_width="@dimen/strean_button_size"
+            android:layout_height="@dimen/strean_button_size"
+            android:background="@color/bg_dialog">
+
+            <ImageView
+                android:id="@+id/imgTurnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/strean_button_image_size"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_turn_camera_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layInfo"
+            android:layout_width="@dimen/strean_button_size"
+            android:layout_height="@dimen/strean_button_size"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/bg_dialog">
+
+            <ImageView
+                android:id="@+id/imgInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/strean_button_image_size"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_info_hide" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layCloseStream"
+            android:layout_width="@dimen/strean_button_size"
+            android:layout_height="@dimen/strean_button_size"
+            android:background="@color/bg_dialog">
+
+            <ImageView
+                android:id="@+id/imgCloseStream"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/strean_button_image_size"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_close_stream" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

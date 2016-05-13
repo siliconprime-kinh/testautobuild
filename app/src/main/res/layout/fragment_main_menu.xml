@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen_grey"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lineLogout"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lay_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_toolbar"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/map"
+                android:background="@drawable/selector_row_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/lay_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/tv_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/inbox"
+                    android:textColor="@color/text_blue_navigation"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/text_green"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/payment"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/general"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="32dp"
+                android:paddingRight="16dp"
+                android:text="@string/term_of_privacy"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="32dp"
+                android:paddingRight="16dp"
+                android:text="@string/history"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="32dp"
+                android:paddingRight="16dp"
+                android:text="@string/settings"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="32dp"
+                android:paddingRight="16dp"
+                android:text="@string/help_center"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lay_become_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/become_an_operator"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view_become_operator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lay_refer_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_row_navigation"
+                android:drawableRight="@drawable/ic_arrow_left_green"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/height_toolbar"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/refer_a_friend"
+                android:textColor="@color/text_blue_navigation"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/lineLogout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lay_logout"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/lay_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_row_navigation"
+        android:drawableRight="@drawable/ic_arrow_left_green"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/height_toolbar"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/logout"
+        android:textColor="@color/text_blue_navigation"
+        android:textSize="16sp" />
+</RelativeLayout>

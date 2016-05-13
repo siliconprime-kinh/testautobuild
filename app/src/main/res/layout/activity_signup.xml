@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen_grey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_nav"
+        android:background="@color/navigation_bg_black">
+
+        <TextView
+            android:id="@+id/signUpTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/signUpButton"
+            android:background="@color/bg_screen_grey"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <com.dropininc.customview.HighlightEditText
+                    android:id="@+id/signUpFirstNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray_dark"
+                    android:textColorHint="@color/text_gray_hint"
+                    android:textSize="18sp"
+                    app:het_capitalized="true"
+                    app:het_min_symbols="1"
+                    app:het_required="true" />
+
+                <com.dropininc.customview.HighlightEditText
+                    android:id="@+id/signUpLastNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray_dark"
+                    android:textColorHint="@color/text_gray_hint"
+                    android:textSize="18sp"
+                    app:het_capitalized="true"
+                    app:het_min_symbols="1"
+                    app:het_required="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/plus"
+                        android:textColor="@color/text_gray_dark"
+                        android:textSize="18sp" />
+
+                    <com.dropininc.customview.HighlightEditText
+                        android:id="@+id/signUpCountryCodeEditText"
+                        android:layout_width="65dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_dark"
+                        android:textColorHint="@color/text_gray_hint"
+                        android:textSize="18sp"
+                        app:het_min_symbols="1"
+                        app:het_required="true" />
+
+                    <com.dropininc.customview.HighlightEditText
+                        android:id="@+id/signUpPhoneNumberEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/mobile_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/text_gray_dark"
+                        android:textColorHint="@color/text_gray_hint"
+                        android:textSize="18sp"
+                        app:het_min_symbols="1"
+                        app:het_required="true" />
+
+                </LinearLayout>
+
+                <com.dropininc.customview.EmailHighlightEditText
+                    android:id="@+id/signUpEmailAddressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/email_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray_dark"
+                    android:textColorHint="@color/text_gray_hint"
+                    android:textSize="18sp"
+                    app:het_required="true" />
+
+                <TextView
+                    android:id="@+id/signUpSmsConfirmationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/you_will_receive"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/signUpReferralHintTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/if_you_have"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+                <com.dropininc.customview.HighlightEditText
+                    android:id="@+id/signUpReferralCodeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/referral_code"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray_dark"
+                    android:textColorHint="@color/text_gray_hint"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/signUpReferralDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/refer_your_friend_for_more"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/enable_state_button_bg"
+            android:enabled="false"
+            android:text="@string/field_completion_hint"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>
